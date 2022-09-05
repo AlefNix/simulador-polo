@@ -708,12 +708,8 @@
   bolsoligadesliga.addEventListener('click', function(e){
     if(document.getElementById('switch-shadow').checked){
       document.getElementById('bolsofrente').style.visibility = "visible";
-      document.getElementById('friso').style.visibility = "visible";
-      document.getElementById('peitilho2').style.visibility = "visible";
     }else {
       document.getElementById('bolsofrente').style.visibility = "hidden";
-      document.getElementById('friso').style.visibility = "hidden";
-      document.getElementById('peitilho2').style.visibility = "hidden";
     }
   });
 
