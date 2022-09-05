@@ -704,8 +704,8 @@
 
 
   //bolso on/off
-  const bolsoligadesliga = document.getElementById('switch-shadow');
-  bolsoligadesliga.addEventListener('click', function(e){
+  const bolsoligadeslig = document.getElementById('switch-shadow');
+  bolsoligadeslig.addEventListener('click', function(e){
     if(document.getElementById('switch-shadow').checked){
       document.getElementById('bolsofrente').style.visibility = "visible";
     }else {
