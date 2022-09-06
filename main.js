@@ -787,11 +787,19 @@ const lado = document.getElementById('switch-shadow2');
     if(document.getElementById('switch-shadow2').checked){
       document.getElementById('frente').style.visibility = "hidden";
       document.getElementById('costas').style.visibility = "visible";
+      document.getElementById('bolsofrente').style.visibility = "hidden";
+      document.getElementById('switch-shadow').disabled = true;
     }else {
+      document.getElementById('switch-shadow').disabled = false;
       document.getElementById('frente').style.visibility = "visible";
       document.getElementById('costas').style.visibility = "hidden" ;
+      if(document.getElementById('switch-shadow').checked){
+        document.getElementById('bolsofrente').style.visibility = "visible";
+    }else {
+      document.getElementById('bolsofrente').style.visibility = "hidden";
     }
-  });
+  }
+});
 
 
 function sizeOfThings() {
